@@ -1,0 +1,98 @@
+:root{
+    box-sizing: border-box;
+font-size: 20px;
+font-family: cursive;
+font-weight: bold;
+}
+
+body{
+    margin: 0;
+}
+.panels{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel p {
+    text-transform: uppercase;
+}
+
+.panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel > *:first-child {
+    transform: translateY(-100%);
+}
+
+.panel.open-active > *:first-child {
+    transform: translateY(0);
+}
+
+.panel > *:last-child {
+    transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child {
+    transform: translateY(0);
+}
+
+
+
+
+.panel1 {
+    background-image: url(./sun0.png);
+}
+
+.panel2 {
+    background-image: url(./THINK.jpg);
+}
+
+.panel3 {
+    background-image: url(./IMG_20130826_000858\ -\ Copy.jpg);
+}
+
+.panel4 {
+    background-image: url(./IMG_2152033571677.jpeg);
+}
+
+.panel5 {
+    background-image: url(./low.jpg);
+}
+
+.panel {
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    color: whitesmoke;
+    font-weight: bolder;
+    text-align: center;align-items: center;
+    transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+    background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.panel.open {
+    flex: 5;
+    font-size: 40px;
+}
+
+.cta{
+    color: white;
+    text-decoration: none;
+}
